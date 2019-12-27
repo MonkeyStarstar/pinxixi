@@ -37,7 +37,7 @@ router.get("/send",(req,res)=>{
     const ClientProfile = tencentcloud.common.ClientProfile;
     const HttpProfile = tencentcloud.common.HttpProfile;
     // 实例化一个认证对象，入参需要传入腾讯云账户secretId，secretKey
-    let cred = new Credential("AKIDX1eKwb69iAb8f1tn8ZwAP5g1KWbYqxQk", "MchbK1wrkXDk9MPAcx9A3wkNsFRTwGUW");
+    let cred = new Credential("你的secretId", "你的secretKey");
     let httpProfile = new HttpProfile();
     httpProfile.endpoint = "sms.tencentcloudapi.com";
     let clientProfile = new ClientProfile();
